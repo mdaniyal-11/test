@@ -6,8 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        hello world
-    </div>
+       <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contech us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Daniyal</a></li>
+                <li class="hide"><a href="#">about</a></li>
+                <li class="hide"><a href="#">services</a></li>
+                <li class="hide"><a href="#">Contech us</a></li>
+                <li class="Menu-btn" onclick="show()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <script>
+        function show(){
+            const sidebar=document.querySelector(".sidebar");
+            sidebar.style.display="flex";
+            sidebar.style.left=0
+        }
+        function hidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display="None"
+        }
+    </script>
 </body>
 </html>
